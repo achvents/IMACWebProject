@@ -1,0 +1,2 @@
+npx tailwindcss -i ./IMAC/static/src/input.css -o ./static/src/output.css --watch
+Ketik di terminal di directory ini
