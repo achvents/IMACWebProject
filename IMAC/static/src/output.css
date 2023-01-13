@@ -1284,8 +1284,20 @@ input[type="range"]::-ms-fill-lower {
   background-size: cover;
 }
 
+.bg-contain {
+  background-size: contain;
+}
+
 .bg-fixed {
   background-attachment: fixed;
+}
+
+.bg-local {
+  background-attachment: local;
+}
+
+.bg-scroll {
+  background-attachment: scroll;
 }
 
 .p-2 {
