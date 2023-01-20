@@ -14,3 +14,27 @@ def home(request):
     }
 
     return render(request, 'home.html', context=context)
+
+def error(request):
+    return render(request, 'error.html')
+
+
+from django.template import RequestContext
+
+
+def handler404(request, *args, **argv):
+    context = RequestContext(request)
+    response = render(None, 'error.html', context=context)
+                                  
+    response.status_code = 404
+    return response
+
+
+def handler500(request, *args, **argv):
+    response = render('error.html', {},
+                                  context_instance=RequestContext(request))
+    response.status_code = 500
+    return response
+
+def handle_not_found(request, exception):
+    return render(request, "error.html")
