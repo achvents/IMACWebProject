@@ -34,7 +34,7 @@ def handler500(request, *args, **argv):
     response = render('error.html', {},
                                   context_instance=RequestContext(request))
     response.status_code = 500
-    return response
+    return response #Gatau bisa ato ngga
 
 def handle_not_found(request, exception):
     return render(request, "error.html")
