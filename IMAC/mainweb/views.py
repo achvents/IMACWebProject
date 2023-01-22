@@ -18,6 +18,8 @@ def home(request):
 def error(request):
     return render(request, 'error.html')
 
+def home(request):
+	return render(request,'home.html')
 
 from django.template import RequestContext
 
