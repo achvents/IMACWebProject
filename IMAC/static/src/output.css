@@ -1643,6 +1643,10 @@ input[type="range"]::-ms-fill-lower {
     flex-direction: row;
   }
 
+  .md\:place-content-between {
+    place-content: space-between;
+  }
+
   .md\:gap-6 {
     gap: 1.5rem;
   }
@@ -1663,6 +1667,10 @@ input[type="range"]::-ms-fill-lower {
 
   .md\:p-0 {
     padding: 0px;
+  }
+
+  .md\:p-12 {
+    padding: 3rem;
   }
 
   .md\:text-sm {
@@ -1705,6 +1713,18 @@ input[type="range"]::-ms-fill-lower {
 }
 
 @media (min-width: 1024px) {
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:place-content-between {
+    place-content: space-between;
+  }
+
+  .lg\:p-12 {
+    padding: 3rem;
+  }
+
   .lg\:pl-96 {
     padding-left: 24rem;
   }
