@@ -1,0 +1,34 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div class="text-white text-center justify-items-center content-center container">
+<table>
+    <thead>
+        <tr>
+        <td>Nama Lengkap</td>
+        <td>NRP</td>
+        <td>Jurusan</td>
+        <td>Divisi</td>
+        <td>ID Imac</td>
+    </tr>
+    </thead>
+    <tbody>
+        {% for staff_imac in stafflist %}
+        <tr>
+            <td>{{staff_imac.nama}}</td>
+            <td>{{staff_imac.nrp}}</td>
+            <td>{{staff_imac.jurusan}}</td>
+            <td>{{staff_imac.divisi}}</td>
+            <td>{{staff_imac.idimac}}</td>
+            <td>
+                <a href="{% url 'staff_dataupdate' staff_imac.id %}">Edit Data</a>
+            </td>
+            <td>
+                <a href="{% url 'staff_delete' staff_imac.id %}">Delete staff hahaha</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+</div>
+{% endblock %}

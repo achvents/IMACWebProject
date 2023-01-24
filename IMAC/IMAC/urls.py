@@ -25,4 +25,10 @@ urlpatterns = [
     path('home/', include('mainweb.urls')),
     path('', RedirectView.as_view(url='home/', permanent=True)),
     path('accounts/', include('django.contrib.auth.urls')),
+<<<<<<< Updated upstream
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+=======
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+handler404 = "mainweb.views.handle_not_found"
+>>>>>>> Stashed changes

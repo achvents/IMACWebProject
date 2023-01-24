@@ -38,3 +38,11 @@ class article(models.Model):
     class Meta:
          verbose_name = "IMAC Article"
 
+class staff_imac(models.Model):
+    nama = models.CharField(max_length=225)
+    divisi = models.CharField(max_length=225)
+    jurusan = models.CharField(max_length=225)
+    nrp = models.CharField(max_length=10)
+    idimac = models.CharField(max_length=225)
+
+

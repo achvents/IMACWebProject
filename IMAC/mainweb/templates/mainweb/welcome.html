@@ -1,0 +1,9 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div>
+    <h1 class="text-white">Welcome to imac</h1>
+    {% if nrp.is_authenticated %}
+    <h3>Hello {{staff_imac.nama}}</h3>
+</div>
+{% endblock content %}

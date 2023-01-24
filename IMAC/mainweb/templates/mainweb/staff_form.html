@@ -1,0 +1,9 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<form action="" method="post" autocomplete="off" class="label text-white">
+    {%csrf_token%}
+    {{form}}
+    <button type="submit" class="color-white">Submit</button>
+</form>
+{% endblock content %}
