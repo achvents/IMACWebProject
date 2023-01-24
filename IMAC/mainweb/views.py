@@ -21,6 +21,9 @@ def error(request):
 def home(request):
 	return render(request,'home.html')
 
+def login(request):
+	return render(request,'login.html')
+
 from django.template import RequestContext
 
 

@@ -1,0 +1,32 @@
+{% extends "base_generic.html" %}
+{% block content %}
+    <div class="flex h-screen justify-center items-center p-4">
+        <div class="flex max-w-screen flex-col m-auto lg:flex-row p-4 md:p-12 self-center place-items-center bg-transparent">
+                <div class="flex justify-center w-4/12">
+                    <img src="/static/bego_imac_login.png" class="scale-150 lg:scale-100 lg:h-full" alt="Backhoe IMAC" />
+                    <!--<div class="self-end"><h1 class="font-sans font-bold leading-none tracking-tight text-white text-5xl lg:text-9xl">IMAC</h1></div>
+                    <div class="self-end"><p class="font-sans text-4xl font-bold text-white"> Explore to Discover</p></div>-->
+                </div>
+                <div class ="backdrop-blur rounded-3xl p-8 w-9-12 lg:w-5/12 mx-6 grow h-full">
+                    <form>
+                        <div class="mb-6 flex flex-row">
+                          <label for="email" class="w-32 text-center whitespace-nowrap block mx-2 p-0.5 lg:p-2 bg-red-600 rounded-lg text-sm font-medium text-white ">Email</label>
+                          <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-0.5 lg:p-2.5" placeholder="name@flowbite.com" required>
+                        </div>
+                        <div class="mb-6 flex flex-row">
+                          <label for="password" class="w-32 text-center whitespace-nowrap block mx-2 p-0.5 lg:p-2 bg-red-600 rounded-lg text-sm font-medium text-white ">Password</label>
+                          <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-red-500 focus:border-red-500 block w-full p-0.5 lg:p-2.5" required>
+                        </div>
+                        <div class="flex flex-col lg:flex-row items-center lg:justify-between pl-4">
+                          <div class="flex items-center h-5">
+                            <input id="remember" type="checkbox" value="" class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-red-300" required>
+                            <label for="remember" class="ml-2 text-sm font-medium text-gray-100">Remember me</label>
+                          </div>
+                          <button type="submit" class="text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto mt-3 lg:mt-0 px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+                        </div>
+                      </form>
+                      
+                </div>
+        </div>
+    </div>
+{% endblock content %}
