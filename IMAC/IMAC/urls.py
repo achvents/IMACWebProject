@@ -21,10 +21,10 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('home/', include('mainweb.urls')), 
-    path('', RedirectView.as_view(url='home/', permanent=True)),
-    path('accounts/', include('django.contrib.auth.urls')),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    path('admin/', admin.site.urls), #Path Buat admin
+    path('home/', include('mainweb.urls')), #Path buat aplikasi IMAC
+    path('', RedirectView.as_view(url='home/', permanent=True)), #Path klo ada org nulis langsung alamat site nde browser
+    path('accounts/', include('django.contrib.auth.urls')), #Path account, deprecated, account semua lewat home sekarang
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) #Path buat static (css, gambar dll)
 
 handler404 = "mainweb.views.handle_not_found"

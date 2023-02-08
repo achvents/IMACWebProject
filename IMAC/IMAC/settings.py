@@ -29,7 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
-# Application definition
+# Application definition (Jangan pernah dihapus)
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mainweb.apps.MainwebConfig',
     'compressor',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
@@ -75,15 +76,15 @@ WSGI_APPLICATION = 'IMAC.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
+# TODO: Ubah jadi mysql
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
-AUTH_USER_MODEL = 'mainweb.member'
+# User model custom
+AUTH_USER_MODEL = 'mainweb.User'
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
 
@@ -130,3 +131,7 @@ COMPRESS_ROOT = BASE_DIR / 'static'
 COMPRESS_ENABLED = True
 
 STATICFILES_FINDERS = ('compressor.finders.CompressorFinder',)
+
+LOGIN_URL = '/home/login'
+
+LOGIN_REDIRECT_URL = '/home/login'

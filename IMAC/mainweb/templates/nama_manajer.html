@@ -1,0 +1,25 @@
+{% extends "base_generic.html" %}
+{% block content %}
+<div class="flex flex-col items-center">
+    <div class=" flex max-h-screen">
+    <div class="flex flex-col self-center items-center py-4 px-6 m-10 items-center bg-transparent backdrop-blur rounded-3xl xl:mx-48" >
+        <div>    
+            <h1 class="text-[#dad2c9] text-5xl text-center font-bold leading-none underline underline-offset-8 decoration-3 lg:decoration-2 decoration-orange-600 md:text-7xl lg:text-8xl drop-shadow-[0_5px_5px_rgba(0,0,0,5)]">{{ nama_manager }}</h1>
+            {% for x in nama_divisi %}
+            <h3 class="text-[#dad2c9] text-2xl text-center font-bold leading-none lg:text-3xl drop-shadow-[0_5px_5px_rgba(0,0,0,5)]">{{ x.get_divisi_display }}</h3>
+            {% endfor %}
+            <div class="text-lg text-center font-semibold text-white leading-tight tracking-wider pb-2 sm:text-lg md:text-lg lg:text-xl">
+                <p>Hello, Folks</p>
+                <p>Wanna know your manager and division? Remember the letter!</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="/static/logo_imac.png" class="h-6 mr-3 sm:h-12" alt="IMAC Logo" />
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe3_7ZODnsvBSg5o19hzqTokj1iYyuLWWCSX5GQIZJGTxpQvA/viewform" class="inline-flex items-center px-4 py-2.5 mt-4 text-xs md:text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
+                    Welcome Party RSVP
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+{% endblock content %}

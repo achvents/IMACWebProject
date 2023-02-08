@@ -1,0 +1,29 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<div class="flex flex-col items-center">
+    <div class=" flex max-h-screen">
+    <div class="flex flex-col self-center items-center py-4 px-6 m-10 items-center bg-transparent backdrop-blur rounded-3xl xl:mx-48" >
+        <div>    
+            <h1 class="text-[#dad2c9] text-5xl text-center font-bold leading-none underline underline-offset-8 decoration-3 lg:decoration-2 decoration-orange-600 sm:text-6xl md:text-7xl lg:text-8xl drop-shadow-[0_5px_5px_rgba(0,0,0,5)]">Thank You</h1>
+            <div class="text-lg text-center font-semibold text-white leading-tight tracking-wider py-2 sm:text-lg md:text-lg lg:text-xl">
+                <p>very much for your application.</p>
+                <p>After very careful consideration,</p>
+            </div>
+            <div class="mx-[20px] px-2 pb-1 w-auto items-center text-xl text-center font-bold bg-[#dad2c9] text-orange-600 rounded-2xl sm:text-xl md:text-xl lg:text-2xl" > 
+                <p>We regret to inform you that your</p>
+                <p>application has not been selected</p>
+            </div>
+            <div class="text-lg text-center font-semibold text-white pt-4 leading-tight tracking-wider sm:text-lg md:text-lg lg:text-xl">
+                <p>Thank you for the interest you have</p>
+                <p>shown and wish you every success</p>
+                <p>in finding another new opportunity!</p>
+                <a href="{% url 'home' %}" class="inline-flex items-center px-4 py-2.5 mt-4 text-xs md:text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800">
+                    Home
+                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+{% endblock content %}

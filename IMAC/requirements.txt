@@ -1,0 +1,11 @@
+asgiref @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_cchykh5sgr/croots/recipe/asgiref_1661287542702/work
+certifi @ file:///C:/Windows/TEMP/abs_e9b7158a-aa56-4a5b-87b6-c00d295b01fanefpc8_o/croots/recipe/certifi_1655968940823/work/certifi
+Django @ file:///C:/Users/BUILDE~1/AppData/Local/Temp/abs_eeor5o9jj8/croots/recipe/django_1661292534510/work
+django-appconf==1.0.5
+django-compressor==4.3
+django-widget-tweaks==1.4.12
+rcssmin==1.1.1
+rjsmin==1.2.1
+sqlparse @ file:///C:/b/abs_83jn6owfpc/croot/sqlparse_1668793499314/work
+tzdata @ file:///tmp/build/80754af9/python-tzdata_1611693927741/work
+wincertstore==0.2
